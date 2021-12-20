@@ -72,7 +72,7 @@ require("./handlers/mongoDBHandler")(client);
 // Modules
 require("./modules/InivtedRemovedLogs")(client);
 
-client.login(process.env.TOKEN);
+client.login(config.env.TOKEN || process.env.TOKEN);
 
 /**********************************************************
  * @INFO
