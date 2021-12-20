@@ -27,7 +27,7 @@ module.exports = async (client, message) => {
 			prefix
 		} = guild_settings;
 
-		if (prefix === null) prefix = process.env.PREFIX;
+		if (prefix === null) prefix = config.env.PREFIX || process.env.PREFIX;
 
 		const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})`);
 		if (!prefixRegex.test(message.content)) return;
