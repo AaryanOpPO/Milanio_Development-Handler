@@ -27,9 +27,9 @@
 
 > You can always Support me by inviting one of my **own Discord Bots**
 
-[![Milanio]](https://dsc.gg/milanio)
-[![Jerry Music]](https://dsc.gg/jerry.milanio)
-[![Sound Wave]](https://dsc.gg/sound.milanio)
+[Milanio](https://dsc.gg/milanio)
+[Jerry Music](https://dsc.gg/jerry.milanio)
+[Sound Wave](https://dsc.gg/sound.milanio)
 
 # Credits
 
