@@ -22,7 +22,7 @@ function databasing(client, guildid) {
   try {
     if (guildid) {
       client.settings.ensure(guildid, {
-        prefix: process.env.PREFIX,
+        prefix: config.env.PREFIX || process.env.PREFIX,
         embed: {
           "color": ee.color,
           "mediancolor": ee.mediancolor,
