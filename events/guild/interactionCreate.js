@@ -21,7 +21,7 @@ module.exports = async (client, interaction) => {
 			prefix
 		} = guild_settings;
 
-		if (prefix === null) prefix = process.env.PREFIX;
+		if (prefix === null) prefix = config.env.PREFIX || process.env.PREFIX;
 
     if(!interaction.guild.me.permissions.has(Discord.Permissions.FLAGS.SEND_MESSAGES)) return;
     if(!interaction.guild.me.permissions.has(Discord.Permissions.FLAGS.USE_EXTERNAL_EMOJIS)) 
