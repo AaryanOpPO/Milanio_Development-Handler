@@ -22,7 +22,7 @@ module.exports = async (client) => {
     
     try {
     mongoose.Promise = global.Promise;
-    await mongoose.connect(process.env.dbTOKEN, {
+    await mongoose.connect(process.env.MongoDB_TOKEN, {
       //useFindAndModify: false,
       useUnifiedTopology: true,
       useNewUrlParser: true,
