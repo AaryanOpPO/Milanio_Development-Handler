@@ -2,7 +2,7 @@
   "env": {
     "TOKEN": "",
     "PREFIX": "",
-    "dbTOKEN": ""
+    "MongoDB_TOKEN": ""
   },
   "botlogs": {
     "inviteLogs": "905315201430224906"
