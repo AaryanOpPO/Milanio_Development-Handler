@@ -4,7 +4,7 @@
 
 ## Installation | How to use the Handler
 
- **1.** Install [node.js v12+](https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode) or higher
+ **1.** Install [node.js v16+](https://nodejs.org/) or higher
 
  **2.** Download this repo and unzip it    |    or git clone it
 
