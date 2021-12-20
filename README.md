@@ -2,7 +2,7 @@
 
 ## [**DISCORD SUPPORT SERVER INVITE**](https://support.milrato.eu)
 
-## Installation | How to use the Bot
+## Installation | How to use the Handler
 
  **1.** Install [node.js v12+](https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode) or higher
 
