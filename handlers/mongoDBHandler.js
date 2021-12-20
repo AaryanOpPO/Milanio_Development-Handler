@@ -1,3 +1,4 @@
+const config = require('../botconfig/config.json');
 const mongoose = require('mongoose');
 const fs = require('fs');
 const alldbevents = [];
@@ -22,7 +23,7 @@ module.exports = async (client) => {
     
     try {
     mongoose.Promise = global.Promise;
-    await mongoose.connect(process.env.MongoDB_TOKEN, {
+    await mongoose.connect(config.env.MongoDB_TOKEN || process.env.MongoDB_TOKEN, {
       //useFindAndModify: false,
       useUnifiedTopology: true,
       useNewUrlParser: true,
