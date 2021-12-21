@@ -10,7 +10,7 @@ module.exports = async (client) => {
       `Bot User: `.brightBlue + `${client.user.tag}`.blue + `\n` +
       `Guild(s): `.brightBlue + `${client.guilds.cache.size} Servers`.blue + `\n` +
       `Watching: `.brightBlue + `${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)} Members`.blue + `\n` +
-      `Prefix: `.brightBlue + `${process.env.PREFIX || config.PREFIX}`.blue + `\n` +
+      `Prefix: `.brightBlue + `${process.env.PREFIX || config.env.PREFIX}`.blue + `\n` +
       `Commands: `.brightBlue + `${client.commands.size}`.blue + `\n` +
       `Slash Commands: `.brightBlue + `${client.slashCommands.size}`.blue + `\n` +
       `Discord.js: `.brightBlue + `v${Discord.version}`.blue + `\n` +
