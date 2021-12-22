@@ -58,7 +58,7 @@ module.exports = async (client, message) => {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.color)
-						.setTitle(`${client.allEmojis.y} To See All Commands Type: \`${prefix}help\` or \`/help\``)
+						.setTitle(`${client.allEmojis.y} To See All Commands Type: \`${prefix}help\``)
 					]
 				}).catch((e) => {
 					// console.log(e)
