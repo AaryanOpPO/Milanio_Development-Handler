@@ -1,6 +1,7 @@
 # Milanio_Development-Handler
 
-## [**DISCORD SUPPORT SERVER INVITE**](https://support.milrato.eu)
+## [**DISCORD SUPPORT SERVER INVITE**](https://discord.gg/8fYUFxMtAq)
+> 💪 Host on Repit: [Replit Fork](https://discord.gg/8fYUFxMtAq)
 
 ## Installation | How to use the Handler
 
