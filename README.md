@@ -13,8 +13,6 @@
  **4** Fill in the parameters, RIGHT in `config.json`!
 
  **5.** start the bot with **`node bot.js`**!
-
-<br/>
   
 ***
 
