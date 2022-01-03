@@ -68,9 +68,6 @@ require('events').defaultMaxListeners = 0;
 require("./handlers/enmapDB")(client);
 require("./handlers/mongoDBHandler")(client);
 
-// Modules
-require("./modules/InivtedRemovedLogs")(client);
-
 client.login(config.env.TOKEN || process.env.TOKEN);
 
 /**********************************************************
