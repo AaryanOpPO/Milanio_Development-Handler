@@ -1,11 +1,11 @@
 const config = require('../../botconfig/config.json');
+const ee = require('../../botconfig/embed.json');
 const {
 	Collection,
 	MessageEmbed
 } = require('discord.js');
 const Discord = require("discord.js");
 const {
-	databasing,
 	onCoolDown,
 	escapeRegex
 } = require(`../../handlers/functions`);
@@ -18,16 +18,7 @@ module.exports = async (client, message) => {
 		if (message.channel?.partial) await message.channel.fetch().catch(() => {});
 		if (message.member?.partial) await message.member.fetch().catch(() => {});
 
-		databasing(client, message.guild.id)
-		const guild_settings = client.settings.get(message.guild.id);
-
-		let ee = guild_settings.embed;
-
-		let {
-			prefix
-		} = guild_settings;
-
-		if (prefix === null) prefix = config.env.PREFIX || process.env.PREFIX;
+		let prefix  = config.env.PREFIX || process.env.PREFIX;
 
 		const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})`);
 		if (!prefixRegex.test(message.content)) return;
