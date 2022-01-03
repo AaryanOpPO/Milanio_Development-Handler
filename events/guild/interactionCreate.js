@@ -1,27 +1,18 @@
 const config = require(`../../botconfig/config.json`);
+const ee = require(`../../botconfig/embed.json`);
 const {
 	MessageEmbed,
 	Collection
 } = require("discord.js");
 const Discord = require("discord.js");
 const {
-	databasing,
 	onCoolDown,
 } = require(`../../handlers/functions`);
 
 module.exports = async (client, interaction) => {
 	try {
 
-        databasing(client, interaction.guildId)
-		const guild_settings = client.settings.get(interaction.guildId);
-
-		let ee = guild_settings.embed;
-
-		let {
-			prefix
-		} = guild_settings;
-
-		if (prefix === null) prefix = config.env.PREFIX || process.env.PREFIX;
+		let prefix = config.env.PREFIX || process.env.PREFIX;
 
     if(!interaction.guild.me.permissions.has(Discord.Permissions.FLAGS.SEND_MESSAGES)) return;
     if(!interaction.guild.me.permissions.has(Discord.Permissions.FLAGS.USE_EXTERNAL_EMOJIS)) 
