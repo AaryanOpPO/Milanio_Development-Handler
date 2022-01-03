@@ -13,32 +13,9 @@ const ms = require("ms")
 const moment = require("moment")
 const fs = require('fs')
 
-module.exports.databasing = databasing;
 module.exports.onCoolDown = onCoolDown;
 module.exports.escapeRegex = escapeRegex;
 
-function databasing(client, guildid) {
-  if (!client || client == undefined || !client.user || client.user == undefined) return;
-  try {
-    if (guildid) {
-      client.settings.ensure(guildid, {
-        prefix: config.env.PREFIX || process.env.PREFIX,
-        embed: {
-          "color": ee.color,
-          "mediancolor": ee.mediancolor,
-          "wrongcolor": ee.wrongcolor,
-          "footertext": client.guilds.cache.get(guildid) ? client.guilds.cache.get(guildid).name : ee.footertext,
-          "footericon": client.guilds.cache.get(guildid) ? client.guilds.cache.get(guildid).iconURL({
-            dynamic: true
-          }) : ee.footericon,
-        }
-      });
-    }
-    return;
-  } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
-  }
-}
 
 function onCoolDown(message, command) {
   if (!message || !message.client) throw "No Message with a valid DiscordClient granted as First Parameter";
